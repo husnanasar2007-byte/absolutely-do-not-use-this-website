@@ -54,3 +54,16 @@ setInterval(() => {
   const roast = roasts[Math.floor(Math.random() * roasts.length)];
   document.getElementById("roast").innerText = roast;
 }, 12000);
+let progress = 0;
+
+setInterval(() => {
+  if (progress < 90) {
+    progress += Math.floor(Math.random() * 10);
+  } else {
+    progress = Math.floor(Math.random() * 30);
+  }
+
+  document.getElementById("progress-bar").style.width = progress + "%";
+  document.getElementById("progress-text").innerText =
+    progress > 80 ? "Almost there… emotionally." : "Loading your life…";
+}, 2000);
