@@ -67,3 +67,15 @@ setInterval(() => {
   document.getElementById("progress-text").innerText =
     progress > 80 ? "Almost there… emotionally." : "Loading your life…";
 }, 2000);
+const motivations = [
+  "If not today, then also not tomorrow.",
+  "Success is optional. Vibes are mandatory.",
+  "You are not lazy. You are buffering.",
+  "Doing nothing is still a decision. You’re decisive.",
+  "Resting is productive if you believe hard enough."
+];
+
+setInterval(() => {
+  const line = motivations[Math.floor(Math.random() * motivations.length)];
+  document.getElementById("motivation").innerText = line;
+}, 15000);
