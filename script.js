@@ -42,3 +42,15 @@ startBtn.addEventListener("click", () => {
     }
   }, 3000);
 });
+const roasts = [
+  "You could have left. You stayed.",
+  "This website is useless. So is overthinking.",
+  "Your ancestors survived wars for this tab.",
+  "At this point, staying is a commitment.",
+  "Productivity is scared of you."
+];
+
+setInterval(() => {
+  const roast = roasts[Math.floor(Math.random() * roasts.length)];
+  document.getElementById("roast").innerText = roast;
+}, 12000);
