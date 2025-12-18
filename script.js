@@ -40,7 +40,7 @@ startBtn.addEventListener("click", () => {
       messageDiv.innerText =
         motivations[Math.floor(Math.random() * motivations.length)];
     }
-  }, 3000);
+  }, 5000);
 });
 const roasts = [
   "You could have left. You stayed.",
