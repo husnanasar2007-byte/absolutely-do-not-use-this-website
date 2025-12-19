@@ -101,21 +101,21 @@ const humiliation = [
 
 btn1.addEventListener("click", () => {
   failSound.currentTime = 0;
-  failSound.play();
+  failSound.play().catch(() => {});
   messageDiv.innerText = "";
   taskResult.innerText = humiliation[0];
 });
 
 btn2.addEventListener("click", () => {
   failSound.currentTime = 0;
-  failSound.play();
+  failSound.play().catch(() => {});
   messageDiv.innerText = "";
   taskResult.innerText = humiliation[1];
 });
 
 btn3.addEventListener("click", () => {
   failSound.currentTime = 0;
-  failSound.play();
+  failSound.play().catch(() => {});
   messageDiv.innerText = "";
   taskResult.innerText = humiliation[2];
 });
