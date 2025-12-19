@@ -83,12 +83,28 @@ setInterval(() => {
 const taskButtons = document.querySelectorAll(".task");
 const taskResult = document.getElementById("task-result");
 
-taskButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    taskResult.innerText = 
-      "You clicked a button. Nothing changed. Reflect on that.";
-  });
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+
+const humiliation = [
+  "Great choice. Wrong, but great.",
+  "Different button. Same disappointment.",
+  "You really believed this one mattered."
+];
+
+btn1.addEventListener("click", () => {
+  messageDiv.innerText = humiliation[0];
 });
+
+btn2.addEventListener("click", () => {
+  messageDiv.innerText = humiliation[1];
+});
+
+btn3.addEventListener("click", () => {
+  messageDiv.innerText = humiliation[2];
+});
+
 const input = document.getElementById("life-input");
 const submit = document.getElementById("submit-life");
 const inputResult = document.getElementById("input-result");
