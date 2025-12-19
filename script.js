@@ -67,7 +67,7 @@ setInterval(() => {
   document.getElementById("progress-text").innerText =
     progress > 80 ? "Almost there… emotionally." : "Loading your life…";
 }, 2000);
-const motivations = [
+const lateMotivations = [
   "If not today, then also not tomorrow.",
   "Success is optional. Vibes are mandatory.",
   "You are not lazy. You are buffering.",
@@ -76,6 +76,6 @@ const motivations = [
 ];
 
 setInterval(() => {
-  const line = motivations[Math.floor(Math.random() * motivations.length)];
+  const line = lateMotivations[Math.floor(Math.random() * lateMotivations.length)];
   document.getElementById("motivation").innerText = line;
 }, 15000);
