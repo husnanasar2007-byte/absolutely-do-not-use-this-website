@@ -27,6 +27,7 @@ const startBtn = document.getElementById("startBtn");
 startBtn.addEventListener("click", () => {
   startBtn.style.display = "none";
   messageDiv.innerText = "Fixing your life… please wait.";
+  document.getElementById("tasks").style.display = "block";
 
   setInterval(() => {
     time++;
