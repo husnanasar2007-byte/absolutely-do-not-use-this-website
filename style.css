@@ -84,3 +84,16 @@ button:hover {
   border: none;
   cursor: pointer;
 }
+
+#life-input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+#input-result {
+  margin-top: 10px;
+  opacity: 0.8;
+}
