@@ -96,18 +96,21 @@ const humiliation = [
 ];
 
 btn1.addEventListener("click", () => {
+  failSound.currentTime = 0;
   failSound.play();
-  messageDiv.innerText = humiliation[0];
+  taskResult.innerText = humiliation[0];
 });
 
 btn2.addEventListener("click", () => {
+  failSound.currentTime = 0;
   failSound.play();
-  messageDiv.innerText = humiliation[1];
+  taskResult.innerText = humiliation[1];
 });
 
 btn3.addEventListener("click", () => {
+  failSound.currentTime = 0;
   failSound.play();
-  messageDiv.innerText = humiliation[2];
+  taskResult.innerText = humiliation[2];
 });
 
 const input = document.getElementById("life-input");
@@ -115,6 +118,8 @@ const submit = document.getElementById("submit-life");
 const inputResult = document.getElementById("input-result");
 
 submit.addEventListener("click", () => {
+  failSound.currentTime = 0;
+failSound.play().catch(() => {});
   if (input.value.trim() === "") {
     inputResult.innerText = 
       "You submitted nothing. Surprisingly accurate.";
