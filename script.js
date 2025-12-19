@@ -26,6 +26,7 @@ const startBtn = document.getElementById("startBtn");
 const failSound = document.getElementById("failSound");
 
 startBtn.addEventListener("click", () => {
+  failSound.play();
   startBtn.style.display = "none";
   messageDiv.innerText = "Fixing your life… please wait.";
   document.getElementById("tasks").style.display = "block";
@@ -95,14 +96,17 @@ const humiliation = [
 ];
 
 btn1.addEventListener("click", () => {
+  failSound.play();
   messageDiv.innerText = humiliation[0];
 });
 
 btn2.addEventListener("click", () => {
+  failSound.play();
   messageDiv.innerText = humiliation[1];
 });
 
 btn3.addEventListener("click", () => {
+  failSound.play();
   messageDiv.innerText = humiliation[2];
 });
 
