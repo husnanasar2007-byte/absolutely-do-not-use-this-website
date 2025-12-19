@@ -88,7 +88,6 @@ setInterval(() => {
   const line = lateMotivations[Math.floor(Math.random() * lateMotivations.length)];
   document.getElementById("motivation").innerText = line;
 }, 15000);
-const taskResult = document.getElementById("task-result");
 
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
