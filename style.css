@@ -1,14 +1,16 @@
 body {
   background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Comic Sans MS", "Trebuchet MS", Arial, sans-serif; 
   text-align: center;
   padding: 40px;
+  line-height: 1.6;
 }
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -34,6 +36,7 @@ button:hover {
   margin-top: 30px;
   font-size: 1.2rem;
   min-height: 40px;
+  letter-spacing: 0.5px;
 }
 
 #timer {
