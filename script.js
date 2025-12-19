@@ -80,3 +80,12 @@ setInterval(() => {
   const line = lateMotivations[Math.floor(Math.random() * lateMotivations.length)];
   document.getElementById("motivation").innerText = line;
 }, 15000);
+const taskButtons = document.querySelectorAll(".task");
+const taskResult = document.getElementById("task-result");
+
+taskButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    taskResult.innerText = 
+      "You clicked a button. Nothing changed. Reflect on that.";
+  });
+});
