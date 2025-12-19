@@ -89,3 +89,18 @@ taskButtons.forEach(btn => {
       "You clicked a button. Nothing changed. Reflect on that.";
   });
 });
+const input = document.getElementById("life-input");
+const submit = document.getElementById("submit-life");
+const inputResult = document.getElementById("input-result");
+
+submit.addEventListener("click", () => {
+  if (input.value.trim() === "") {
+    inputResult.innerText = 
+      "You submitted nothing. Surprisingly accurate.";
+  } else {
+    inputResult.innerText = 
+      "Interesting. This will not be used.";
+  }
+
+  input.value = "";
+});
