@@ -23,6 +23,7 @@ const motivations = [
 const messageDiv = document.getElementById("message");
 const timerDiv = document.getElementById("timer");
 const startBtn = document.getElementById("startBtn");
+const failSound = document.getElementById("failSound");
 
 startBtn.addEventListener("click", () => {
   startBtn.style.display = "none";
