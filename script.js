@@ -1,4 +1,8 @@
 let time = 0;
+let chaosInterval;
+chaosInterval = setInterval(() => {
+  ...
+}, 5000);
 
 const messages = [
   "You could have closed this tab. You didn’t.",
@@ -29,6 +33,7 @@ const taskResult = document.getElementById("task-result");
 startBtn.addEventListener("click", () => {
   failSound.play();
   startBtn.style.display = "none";
+  clearInterval(chaosInterval);
   messageDiv.innerText = "Fixing your life… please wait.";
   document.getElementById("tasks").style.display = "block";
 
@@ -98,18 +103,21 @@ const humiliation = [
 btn1.addEventListener("click", () => {
   failSound.currentTime = 0;
   failSound.play();
+  messageDiv.innerText = "";
   taskResult.innerText = humiliation[0];
 });
 
 btn2.addEventListener("click", () => {
   failSound.currentTime = 0;
   failSound.play();
+  messageDiv.innerText = "";
   taskResult.innerText = humiliation[1];
 });
 
 btn3.addEventListener("click", () => {
   failSound.currentTime = 0;
   failSound.play();
+  messageDiv.innerText = "";
   taskResult.innerText = humiliation[2];
 });
 
