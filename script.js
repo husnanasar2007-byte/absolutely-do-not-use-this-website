@@ -24,6 +24,7 @@ const messageDiv = document.getElementById("message");
 const timerDiv = document.getElementById("timer");
 const startBtn = document.getElementById("startBtn");
 const failSound = document.getElementById("failSound");
+const taskResult = document.getElementById("task-result");
 
 startBtn.addEventListener("click", () => {
   failSound.play();
