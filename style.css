@@ -100,21 +100,30 @@ button:hover {
   margin-top: 10px;
   opacity: 0.8;
 }
-
-body::before {
-  content: "❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄";
+.snow {
   position: fixed;
-  top: -20%;
+  top: 0;
   left: 0;
   width: 100%;
-  text-align: center;
-  font-size: 22px;
+  height: 100%;
   pointer-events: none;
-  animation: snow 12s linear infinite;
-  opacity: 0.4;
+  overflow: hidden;
 }
 
-@keyframes snow {
-  from { top: -20%; }
-  to { top: 120%; }
+.snow span {
+  position: absolute;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall linear infinite;
 }
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
