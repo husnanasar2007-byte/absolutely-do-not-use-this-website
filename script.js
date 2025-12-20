@@ -1,7 +1,7 @@
  let time = 0;
 let chaosInterval;
 chaosInterval = setInterval(() => {
-  
+  // placeholder
 }, 5000);
 
 const messages = [
