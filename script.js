@@ -140,7 +140,7 @@ failSound.play().catch(() => {});
   input.value = "";
 });
 
-setTimeout(() => {
+function showSanta() {
   const santa = document.getElementById("santa");
   const text = document.getElementById("santa-text");
 
@@ -173,5 +173,5 @@ setTimeout(() => {
     text.style.display = "none";
   }, 7000);
 
-}, Math.random() * 5000 + 10000);
+}, setInterval(showSanta, 12000);
 });
