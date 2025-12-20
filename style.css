@@ -126,13 +126,22 @@ button:hover {
     transform: translateY(110vh);
   }
 }
-#santa {
+
+#santa-area {
   position: fixed;
-  bottom: -260px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  pointer-events: none;
+}
+
+#santa {
+  position: absolute;
   right: 20px;
+  bottom: -200px;
   width: 130px;
-  transition: all 1s ease;
-  z-index: 999;
+  transition: bottom 1s ease;
 }
 
 #santa.show {
@@ -140,13 +149,12 @@ button:hover {
 }
 
 #santa-text {
-  position: fixed;
-  bottom: 170px;
-  right: 160px;
+  position: absolute;
+  right: 170px;
+  bottom: 120px;
   background: rgba(255, 255, 255, 0.9);
   padding: 8px 12px;
   border-radius: 12px;
   font-size: 14px;
   display: none;
-  z-index: 999;
 }
