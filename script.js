@@ -173,5 +173,5 @@ setTimeout(() => {
     text.style.display = "none";
   }, 7000);
 
-}, Math.random() * 30000 + 20000);
+}, Math.random() * 5000 + 10000);
 });
