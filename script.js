@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let time = 0;
 let chaosInterval;
 chaosInterval = setInterval(() => {
-  ...
+  
 }, 5000);
 
 const messages = [
@@ -30,7 +30,10 @@ const timerDiv = document.getElementById("timer");
 const startBtn = document.getElementById("startBtn");
 const failSound = document.getElementById("failSound");
 const taskResult = document.getElementById("task-result");
-
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+  
 startBtn.addEventListener("click", () => {
   failSound.play();
   startBtn.style.display = "none";
@@ -52,6 +55,7 @@ startBtn.addEventListener("click", () => {
     }
   }, 5000);
 });
+  
 const roasts = [
   "You could have left. You stayed.",
   "This website is useless. So is overthinking.",
@@ -89,10 +93,6 @@ setInterval(() => {
   const line = lateMotivations[Math.floor(Math.random() * lateMotivations.length)];
   document.getElementById("motivation").innerText = line;
 }, 15000);
-
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
 
 const humiliation = [
   "Great choice. Wrong, but great.",
