@@ -156,12 +156,13 @@ button:hover {
 }
 
 #santa-text {
-  position: absolute;
-  right: 170px;
-  bottom: 120px;
+  position: fixed;
+  left: 170px;
+  bottom: 170px;
   background: none;
   box-shadow: none;
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  z-index: 999;
   padding: 8px 12px;
   border-radius: 12px;
   font-size: 16px;
