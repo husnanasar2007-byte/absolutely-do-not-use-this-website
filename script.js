@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+
   let time = 0;
 let chaosInterval;
 chaosInterval = setInterval(() => {
@@ -45,13 +45,13 @@ startBtn.addEventListener("click", () => {
     time++;
     timerDiv.innerText = `Time wasted: ${time} seconds`;
 
-    const chaos = Math.random();
-    if (chaos < 0.6) {
-      messageDiv.innerText =
-        messages[Math.floor(Math.random() * messages.length)];
-    } else {
-      messageDiv.innerText =
-        motivations[Math.floor(Math.random() * motivations.length)];
+const chaos = Math.random();
+  if (chaos < 0.6) {
+    messageDiv.innerText =
+      messages[Math.floor(Math.random() * messages.length)];
+  } else {
+     messageDiv.innerText =
+      motivations[Math.floor(Math.random() * motivations.length)];
     }
   }, 5000);
 });
@@ -81,6 +81,7 @@ setInterval(() => {
   document.getElementById("progress-text").innerText =
     progress > 80 ? "Almost there… emotionally." : "Loading your life…";
 }, 2000);
+  
 const lateMotivations = [
   "If not today, then also not tomorrow.",
   "Success is optional. Vibes are mandatory.",
@@ -138,4 +139,4 @@ failSound.play().catch(() => {});
 
   input.value = "";
 });
-});
+
