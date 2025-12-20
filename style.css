@@ -100,3 +100,21 @@ button:hover {
   margin-top: 10px;
   opacity: 0.8;
 }
+
+body::before {
+  content: "❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄";
+  position: fixed;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  pointer-events: none;
+  animation: snow 12s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes snow {
+  from { top: -20%; }
+  to { top: 120%; }
+}
