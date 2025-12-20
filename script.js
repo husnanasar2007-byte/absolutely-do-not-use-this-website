@@ -1,5 +1,4 @@
-
-  let time = 0;
+ let time = 0;
 let chaosInterval;
 chaosInterval = setInterval(() => {
   
