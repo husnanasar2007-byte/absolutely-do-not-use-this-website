@@ -1,4 +1,5 @@
- let time = 0;
+document.addEventListener("DOMContentLoaded", () => {
+let time = 0;
 let chaosInterval;
 chaosInterval = setInterval(() => {
   // placeholder
@@ -139,3 +140,38 @@ failSound.play().catch(() => {});
   input.value = "";
 });
 
+setTimeout(() => {
+  const santa = document.getElementById("santa");
+  const text = document.getElementById("santa-text");
+
+  // 😊 Enters happy
+  santa.src = "santa-happy.png";
+  santa.classList.add("show");
+  text.innerText = "Ho ho ho!";
+  text.style.display = "block";
+
+  // 😐 Processing
+  setTimeout(() => {
+    text.innerText = "Hmm...";
+  }, 2000);
+
+  // 😔 Disappointed
+  setTimeout(() => {
+    santa.src = "santa-disappointed.png";
+    text.innerText = "Oh...";
+  }, 3500);
+
+  // 👀 Judging
+  setTimeout(() => {
+    santa.src = "santa-judge.png";
+    text.innerText = "I see.";
+  }, 5000);
+
+  // 🚪 Leaves
+  setTimeout(() => {
+    santa.classList.remove("show");
+    text.style.display = "none";
+  }, 7000);
+
+}, Math.random() * 30000 + 20000);
+});
