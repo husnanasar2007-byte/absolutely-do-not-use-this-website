@@ -1,4 +1,5 @@
-let time = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  let time = 0;
 let chaosInterval;
 chaosInterval = setInterval(() => {
   ...
@@ -136,4 +137,5 @@ failSound.play().catch(() => {});
   }
 
   input.value = "";
+});
 });
