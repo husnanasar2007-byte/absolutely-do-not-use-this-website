@@ -40,9 +40,12 @@ button:hover {
 }
 
 #timer {
-  margin-top: 20px;
-  font-size: 1rem;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   opacity: 0.7;
+  font-size: 14px;
 }
 
 #roast {
@@ -131,30 +134,32 @@ button:hover {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   pointer-events: none;
 }
 
 #santa {
   position: absolute;
-  right: 20px;
-  bottom: -200px;
-  width: 130px;
+  right: 10px;
+  bottom: -220px;
+  width: 180px;
   transition: bottom 1s ease;
 }
 
 #santa.show {
-  bottom: 20px;
+  bottom: 10px;
 }
 
 #santa-text {
   position: absolute;
   right: 170px;
   bottom: 120px;
-  background: rgba(255, 255, 255, 0.9);
+  background: none;
+  box-shadow: none;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
   padding: 8px 12px;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 16px;
   display: none;
 }
