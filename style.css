@@ -148,11 +148,13 @@ button:hover {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.6s ease;
+  display: none;
 }
 
 #santa.show {
   opacity: 1;
   transform: translateY(0);
+  display: block;
 }
 
 #santa-text {
