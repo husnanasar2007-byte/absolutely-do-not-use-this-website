@@ -175,3 +175,39 @@ button:hover {
   font-size: 16px;
   display: none;
 }
+
+/* ---------- SCROLL HINT ---------- */
+#scroll-hint {
+  margin-top: 80px;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* ---------- GIFT SECTION ---------- */
+#gift-section {
+  margin-top: 700px;   /* THIS forces scrolling */
+  text-align: center;
+}
+
+/* Gift images */
+#gift-closed,
+#gift-opened {
+  width: 160px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Hide opened gift at start */
+#gift-opened {
+  display: none;
+}
+
+/* Open button */
+#open-gift {
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
