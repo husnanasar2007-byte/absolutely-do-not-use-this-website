@@ -190,6 +190,6 @@ openGiftBtn.addEventListener("click", () => {
   closedGift.style.display = "none";
   openedGift.style.display = "block";
   openGiftBtn.style.display = "none";
-  giftText.textContent = "It was empty. But thanks for checking anyway.";
+  giftText.textContent = "take this and just leave now.";
 });
 });
