@@ -98,11 +98,11 @@ button:hover {
   width: 70%;
   border-radius: 10px;
   border: none;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 
 #input-result {
-  margin-top: 40px;
+  margin-top: 10px;
   opacity: 0.8;
 }
 
