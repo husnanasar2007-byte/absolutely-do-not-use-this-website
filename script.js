@@ -179,5 +179,17 @@ function showSanta() {
 
   // repeat every 12 seconds
   setInterval(showSanta, 12000);
-  
+
+  // 🎁 Gift opening logic
+const openGiftBtn = document.getElementById("open-gift");
+const closedGift = document.getElementById("gift-closed");
+const openedGift = document.getElementById("gift-opened");
+const giftText = document.getElementById("gift-text");
+
+openGiftBtn.addEventListener("click", () => {
+  closedGift.style.display = "none";
+  openedGift.style.display = "block";
+  openGiftBtn.style.display = "none";
+  giftText.textContent = "It was empty. But thanks for checking anyway.";
+});
 });
