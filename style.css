@@ -5,6 +5,8 @@ body {
   text-align: center;
   padding: 40px;
   line-height: 1.6;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 h1 {
@@ -60,7 +62,7 @@ button:hover {
   background: rgba(255,255,255,0.2);
   border-radius: 10px;
   margin: 20px auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 #progress-bar {
@@ -100,7 +102,7 @@ button:hover {
 }
 
 #input-result {
-  margin-top: 10px;
+  margin-top: 40px;
   opacity: 0.8;
 }
 
@@ -140,8 +142,12 @@ button:hover {
   pointer-events: none;
 }
 
+#santa-wrapper {
+  margin-top: 40px;
+}
+
 #santa {
-  position: fixed;
+  position: relative;
   bottom: 20px;
   left: 20px;              
   width: 190px;          
