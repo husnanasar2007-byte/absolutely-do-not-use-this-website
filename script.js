@@ -172,11 +172,13 @@ function showSanta() {
     santa.classList.remove("show");
     text.style.display = "none";
   }, 7000);
+  });
+});
 
 // first Santa appears after 2 seconds
 setTimeout(showSanta, 2000);
 
 // Santa repeats every 12 seconds
 setInterval(showSanta, 12000);
-});
-});
+
+
