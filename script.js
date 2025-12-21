@@ -179,3 +179,4 @@ setTimeout(showSanta, 2000);
 // Santa repeats every 12 seconds
 setInterval(showSanta, 12000);
 });
+});
