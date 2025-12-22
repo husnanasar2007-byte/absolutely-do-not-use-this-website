@@ -134,7 +134,6 @@ button:hover {
 }
 
 #santa-area {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 200px;
@@ -143,7 +142,8 @@ button:hover {
 }
 
 #santa-wrapper {
-  margin-top: 40px;
+  margin-top: 80px;
+  text-align: center;
 }
 
 #santa {
@@ -155,7 +155,7 @@ button:hover {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.6s ease;
-  display: none;
+  display: block;
 }
 
 #santa.show {
@@ -165,7 +165,7 @@ button:hover {
 }
 
 #santa-text {
-  position: fixed;
+  position: relative;
   left: 170px;
   bottom: 170px;
   background: none;
@@ -173,7 +173,7 @@ button:hover {
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
   z-index: 999;
   font-size: 16px;
-  display: none;
+  display: block;
 }
 
 /* ---------- SCROLL HINT ---------- */
