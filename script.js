@@ -185,8 +185,11 @@ const openGiftBtn = document.getElementById("open-gift");
 const closedGift = document.getElementById("gift-closed");
 const openedGift = document.getElementById("gift-opened");
 const giftText = document.getElementById("gift-text");
-
+  
+const giftSound = document.getElementById("gift-sound");
+  
 openGiftBtn.addEventListener("click", () => {
+  giftSound.play();
   closedGift.style.display = "none";
   openedGift.style.display = "block";
   openGiftBtn.style.display = "none";
