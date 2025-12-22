@@ -162,7 +162,7 @@ function showSanta() {
 
   // 😐 Processing
   setTimeout(() => {
-    text.innerText = "Hmm...";
+    text.innerText = "Hmm... what's happening?!";
   }, 2000);
 
   // 😔 Disappointed
@@ -185,7 +185,7 @@ function showSanta() {
   }
 
   // first appearance
-  setTimeout(showSanta, 2000);
+  setTimeout(showSanta, 5000);
 
   // repeat every 12 seconds
   setInterval(showSanta, 12000);
