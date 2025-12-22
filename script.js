@@ -14,6 +14,11 @@ const messages = [
   "Even this website is judging you.",
   "At this point, stay. Leaving would be awkward.",
   "You are doing absolutely nothing. Perfect."
+  "You could have left. You stayed.",
+  "This website is useless. So is overthinking.",
+  "Your ancestors survived wars for this tab.",
+  "At this point, staying is a commitment.",
+  "Productivity is scared of you."
 ];
 
 const motivations = [
@@ -57,11 +62,16 @@ const chaos = Math.random();
 });
   
 const roasts = [
-  "You could have left. You stayed.",
-  "This website is useless. So is overthinking.",
-  "Your ancestors survived wars for this tab.",
-  "At this point, staying is a commitment.",
-  "Productivity is scared of you."
+ "Merry Christmas! May your Wi-Fi be strong and your relatives leave early.",
+ "Santa saw your search history. he is traumatized.",
+ "Eat. Sleep. Repeat. Blame Christmas.",
+ "Dear Santa, I can explain.",
+ "Christmas calories don’t count. Science said so.",
+ "Hope your Christmas is as unhinged as your New Year plans.",
+ "May your gifts be useful and your socks unmatched.",
+ "Jingle bells, bank account yells.",
+ "Survived another family gathering. Merry Christmas to you.",
+ "All I want for Christmas is peace… and snacks.",
 ];
 
 setInterval(() => {
