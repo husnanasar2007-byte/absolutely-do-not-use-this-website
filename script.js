@@ -13,12 +13,12 @@ const messages = [
   "You’re still here. Interesting.",
   "Even this website is judging you.",
   "At this point, stay. Leaving would be awkward.",
-  "You are doing absolutely nothing. Perfect."
+  "You are doing absolutely nothing. Perfect.",
   "You could have left. You stayed.",
   "This website is useless. So is overthinking.",
   "Your ancestors survived wars for this tab.",
   "At this point, staying is a commitment.",
-  "Productivity is scared of you."
+  "Productivity is scared of you.",
 ];
 
 const motivations = [
