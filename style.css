@@ -186,14 +186,14 @@ button:hover {
 
 /* ---------- GIFT SECTION ---------- */
 #gift-section {
-  margin-top: 700px;   /* THIS forces scrolling */
+  margin-top: 900px;   /* THIS forces scrolling */
   text-align: center;
 }
 
 /* Gift images */
 #gift-closed,
 #gift-opened {
-  width: 160px;
+  width: 240px;
   display: block;
   margin: 20px auto;
 }
