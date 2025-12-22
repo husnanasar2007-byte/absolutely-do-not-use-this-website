@@ -195,4 +195,16 @@ openGiftBtn.addEventListener("click", () => {
   openGiftBtn.style.display = "none";
   giftText.textContent = "take this and just leave now.";
 });
+
+  const bgMusic = document.getElementById("bg-music");
+
+function startMusic() {
+  bgMusic.volume = 0.25; // soft
+  bgMusic.play().catch(() => {});
+  document.removeEventListener("click", startMusic);
+  document.removeEventListener("scroll", startMusic);
+}
+
+document.addEventListener("click", startMusic);
+document.addEventListener("scroll", startMusic);
 });
