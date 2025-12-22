@@ -48,7 +48,7 @@ startBtn.addEventListener("click", () => {
 
   setInterval(() => {
     time++;
-    timerDiv.innerText = `Time wasted: ${time} seconds`;
+    timerDiv.innerText = `slo-mo time wasted: ${time} seconds`;
 
 const chaos = Math.random();
   if (chaos < 0.6) {
