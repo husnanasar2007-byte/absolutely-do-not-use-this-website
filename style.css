@@ -52,7 +52,8 @@ button:hover {
 
 #roast {
   margin-top: 20px;
-  font-style: italic;
+  font-style: 'Anton', sans-serif;
+  font-size: 1.8rem;
   opacity: 0.8;
 }
 
@@ -78,7 +79,7 @@ button:hover {
 }
 
 #motivation {
-  font-size: 15px;
+  font-size: 18px;
   opacity: 0.85;
   margin-top: 30px;
 }
