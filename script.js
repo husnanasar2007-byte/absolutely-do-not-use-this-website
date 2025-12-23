@@ -4,9 +4,9 @@ let chaosInterval;
 chaosInterval = setInterval(() => {
   // placeholder
 }, 5000);
-
-  const bgMusic = document.getElementById("bg-music");
-let musicStarted = false;
+  
+const bgMusic = document.getElementById("bg-music");
+ let musicStarted = false;
 
 function startMusicOnce() {
   if (musicStarted) return; // ⛔ prevents restart
