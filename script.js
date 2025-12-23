@@ -221,8 +221,6 @@ const roastBtn = document.getElementById("roastBtn");
 const roastResult = document.getElementById("roastResult");
  
 const roastMessages = [
-  failSound.currentTime = 0;
-  failSound.play().catch(() => {});
   "Wow. That number explains everything.",
   "Santa saw that number and left.",
   "Interesting choice. Very… you.",
@@ -248,6 +246,9 @@ const roastMessages = [
 ];
 
 roastBtn.addEventListener("click", () => {
+  failSound.currentTime = 0;
+  failSound.play().catch(() => {});
+  
   const num = document.getElementById("userNumber").value;
 
   if (num === "") {
