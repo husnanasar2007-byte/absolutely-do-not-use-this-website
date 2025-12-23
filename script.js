@@ -12,7 +12,7 @@ function startMusic() {
   bgMusic.play().catch(() => {});
   document.removeEventListener("click", startMusic);
   document.removeEventListener("scroll", startMusic);
-}
+};
 
 document.addEventListener("click", startMusic);
 document.addEventListener("scroll", startMusic);
@@ -59,9 +59,9 @@ startBtn.addEventListener("click", () => {
   document.getElementById("tasks").style.display = "block";
 });
 
-  setInterval(() => {
-    time++;
-    timerDiv.innerText = `slo-mo time wasted: ${time} seconds`;
+ setInterval(() => {
+   time++;
+   timerDiv.innerText = `slo-mo time wasted: ${time} seconds`;
 
 const chaos = Math.random();
   if (chaos < 0.6) {
@@ -73,7 +73,6 @@ const chaos = Math.random();
     }
   }, 5000);
 
-  
 const roasts = [
  "Merry Christmas! May your Wi-Fi be strong and your relatives leave early.",
  "Santa saw your search history. he is traumatized.",
@@ -208,7 +207,6 @@ const openGiftBtn = document.getElementById("open-gift");
 const closedGift = document.getElementById("gift-closed");
 const openedGift = document.getElementById("gift-opened");
 const giftText = document.getElementById("gift-text");
-  
 const giftSound = document.getElementById("gift-sound");
   
 openGiftBtn.addEventListener("click", () => {
