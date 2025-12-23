@@ -204,6 +204,7 @@ openGiftBtn.addEventListener("click", () => {
   openedGift.style.display = "block";
   openGiftBtn.style.display = "none";
   giftText.textContent = "take this and just leave now.";
+});
 
   const bgMusic = document.getElementById("bg-music");
 
@@ -213,10 +214,8 @@ function startMusic() {
   document.removeEventListener("click", startMusic);
   document.removeEventListener("scroll", startMusic);
 }
-
 document.addEventListener("click", startMusic);
 document.addEventListener("scroll", startMusic);
-});
 
 const roastBtn = document.getElementById("roastBtn");
 const roastResult = document.getElementById("roastResult");
