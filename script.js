@@ -220,7 +220,7 @@ document.addEventListener("scroll", startMusic);
 
 const roastBtn = document.getElementById("roastBtn");
 const roastResult = document.getElementById("roastResult");
-
+ 
 const roastMessages = [
   "Wow. That number explains everything.",
   "Santa saw that number and left.",
@@ -228,18 +228,18 @@ const roastMessages = [
   "Math refuses to work with this.",
   "Congratulations. You played yourself.",
   "This number has zero expectations from you.",
-  "Result: still wrong.”,
-  "Math checked. You didn’t.”,
-  "Even numbers are disappointed.”,
-  "Calculator needs a break after this.”,
-  "That answer scared the algorithm.”,
-  "I ran the numbers. They ran away.”,
-  "Error 404: Logic not found.”,
-  "Congrats. You invented a new wrong.”,
-  "That was… an attempt.”,
-  "Even the elves said ‘nah’.”,
-  "Santa didn’t skip you. He avoided you.”,
-  "North Pole rejected your application.Permanently.”,
+  "Result: still wrong.",
+  "Math checked. You didn’t.",
+  "Even numbers are disappointed.",
+  "Calculator needs a break after this.",
+  "That answer scared the algorithm.",
+  "I ran the numbers. They ran away.",
+  "Error 404: Logic not found.",
+  "Congrats. You invented a new wrong.",
+  "That was… an attempt.",
+  "Even the elves said ‘nah’.",
+  "Santa didn’t skip you. He avoided you.",
+  "North Pole rejected your application. Permanently.",
   "Result: Try again next life 🎄",
   "Success chance: 0.01%",
   "Calculator crashed seeing your dreams 💀",
