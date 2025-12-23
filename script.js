@@ -239,7 +239,7 @@ const roastMessages = [
   "That was… an attempt.”,
   "Even the elves said ‘nah’.”,
   "Santa didn’t skip you. He avoided you.”,
-  "North Pole rejected your application. Permanently.”,
+  "North Pole rejected your application.Permanently.”,
   "Result: Try again next life 🎄",
   "Success chance: 0.01%",
   "Calculator crashed seeing your dreams 💀",
