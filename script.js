@@ -213,9 +213,9 @@ function startMusic() {
   bgMusic.play().catch(() => {});
   document.removeEventListener("click", startMusic);
   document.removeEventListener("scroll", startMusic);
+  document.addEventListener("click", startMusic);
+  document.addEventListener("scroll", startMusic);
 }
-document.addEventListener("click", startMusic);
-document.addEventListener("scroll", startMusic);
 
 const roastBtn = document.getElementById("roastBtn");
 const roastResult = document.getElementById("roastResult");
