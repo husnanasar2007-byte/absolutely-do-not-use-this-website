@@ -5,6 +5,10 @@ It will save your life
 
 A fun, interactive Christmas-themed webpage with motivations, sounds, and a tiny gift at the end.
 
+## 🎄 Bonus Chaos
+Includes a completely useless Life Success Calculator
+that does absolutely nothing except judge you.
+
 ## ✨ What is this?
 This project is made to bring a little joy.
  This is pure chaos, a web experience designed to roast you, waste your time, and confuse your soul.  
@@ -13,13 +17,13 @@ You may encounter: Santa, snowflakes, a gift 🎁, impossible motivations 🧠, 
 
 ## 🧠 Features
 
-- Motivational messages
+- Motivational messages: deep motivations that change your life choices 
 - Interactive buttons: that promise progress 
 - gift box 🎁: scroll down to find it, not something you want but something you need
 - Santa cameo: because Christmas.  
 - Sound effects & background melody 🎶
 - Fully beginner-built with love ❤️
-
+- roastculator: calculating your future 
 ## 🛠 Built With
 - HTML
 - CSS
