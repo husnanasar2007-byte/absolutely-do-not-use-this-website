@@ -5,6 +5,20 @@ chaosInterval = setInterval(() => {
   // placeholder
 }, 5000);
 
+  const bgMusic = document.getElementById("bg-music");
+let musicStarted = false;
+
+function startMusicOnce() {
+  if (musicStarted) return; // ⛔ prevents restart
+  musicStarted = true;
+
+  bgMusic.volume = 0.25;
+  bgMusic.play().catch(() => {});
+}
+
+document.addEventListener("click", startMusicOnce, { once: true });
+document.addEventListener("scroll", startMusicOnce, { once: true });
+  
 const messages = [
   "You could have closed this tab. You didn’t.",
   "Bold of you to think this helps.",
@@ -45,19 +59,8 @@ startBtn.addEventListener("click", () => {
   clearInterval(chaosInterval);
   messageDiv.innerText = "Fixing your life… please wait.";
   document.getElementById("tasks").style.display = "block";
-
-  const bgMusic = document.getElementById("bg-music");
-
-function startMusic() {
-  bgMusic.volume = 0.25; // soft
-  bgMusic.play().catch(() => {});
-  document.removeEventListener("click", startMusic);
-  document.removeEventListener("scroll", startMusic);
-}
-  document.addEventListener("click", startMusic);
-  document.addEventListener("scroll", startMusic);
 });
-  
+
   setInterval(() => {
     time++;
     timerDiv.innerText = `slo-mo time wasted: ${time} seconds`;
