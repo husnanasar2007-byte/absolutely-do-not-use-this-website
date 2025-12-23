@@ -204,7 +204,6 @@ openGiftBtn.addEventListener("click", () => {
   openedGift.style.display = "block";
   openGiftBtn.style.display = "none";
   giftText.textContent = "take this and just leave now.";
-});
 
   const bgMusic = document.getElementById("bg-music");
 
@@ -217,4 +216,31 @@ function startMusic() {
 
 document.addEventListener("click", startMusic);
 document.addEventListener("scroll", startMusic);
+});
+
+const roastBtn = document.getElementById("roastBtn");
+const roastResult = document.getElementById("roastResult");
+
+const roastMessages = [
+  "Wow. That number explains everything.",
+  "Santa saw that number and left.",
+  "Interesting choice. Very… you.",
+  "Math refuses to work with this.",
+  "Congratulations. You played yourself.",
+  "This number has zero expectations from you."
+];
+
+roastBtn.addEventListener("click", () => {
+  const num = document.getElementById("userNumber").value;
+
+  if (num === "") {
+    roastResult.textContent = "At least ENTER something 🙄";
+    return;
+  }
+
+  const randomRoast =
+    roastMessages[Math.floor(Math.random() * roastMessages.length)];
+
+  roastResult.textContent = randomRoast;
+});
 });
