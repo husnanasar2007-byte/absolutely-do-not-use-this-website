@@ -46,6 +46,18 @@ startBtn.addEventListener("click", () => {
   messageDiv.innerText = "Fixing your life… please wait.";
   document.getElementById("tasks").style.display = "block";
 
+  const bgMusic = document.getElementById("bg-music");
+
+function startMusic() {
+  bgMusic.volume = 0.25; // soft
+  bgMusic.play().catch(() => {});
+  document.removeEventListener("click", startMusic);
+  document.removeEventListener("scroll", startMusic);
+}
+  document.addEventListener("click", startMusic);
+  document.addEventListener("scroll", startMusic);
+});
+  
   setInterval(() => {
     time++;
     timerDiv.innerText = `slo-mo time wasted: ${time} seconds`;
@@ -59,7 +71,7 @@ const chaos = Math.random();
       motivations[Math.floor(Math.random() * motivations.length)];
     }
   }, 5000);
-});
+
   
 const roasts = [
  "Merry Christmas! May your Wi-Fi be strong and your relatives leave early.",
@@ -205,17 +217,6 @@ openGiftBtn.addEventListener("click", () => {
   openGiftBtn.style.display = "none";
   giftText.textContent = "take this and just leave now.";
 });
-
-  const bgMusic = document.getElementById("bg-music");
-
-function startMusic() {
-  bgMusic.volume = 0.25; // soft
-  bgMusic.play().catch(() => {});
-  document.removeEventListener("click", startMusic);
-  document.removeEventListener("scroll", startMusic);
-  document.addEventListener("click", startMusic);
-  document.addEventListener("scroll", startMusic);
-}
 
 const roastBtn = document.getElementById("roastBtn");
 const roastResult = document.getElementById("roastResult");
